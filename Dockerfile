@@ -6,6 +6,6 @@ RUN apk add --no-cache \
         git \
     && pip3 install --upgrade pip \
     && pip3 install --no-cache-dir \
-        awscli \
-        awsebcli \
+        awscli==1.16.11 \
+        awsebcli==3.14.6 \
     && rm -rf /var/cache/apk/*
